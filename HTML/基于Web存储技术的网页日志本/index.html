@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/diary.css" />
+		<script type="text/javascript" src="js/diary.js" ></script>
+	</head>
+	<body>
+		<div>
+			<h2>我的日志本</h2>
+			<h4>开始写日志</h4>
+			<textarea id="rizi"></textarea>
+			<br />
+			<button onclick="saveDiary()">保存日志</button>
+			<button onclick="clearDiary()">删除全部日志</button>
+			<p>历史记录</p>
+			<table id="all">
+				<tr>
+					<td id="id">序号</td>
+					<td>日志内容</td>
+					<td id="date">保存时间</td>
+					<td>操作</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+div
+{
+	box-shadow: 10px 10px 15px black;
+    text-align: center;
+    color: orange;
+    height: 600px;
+    width: 80%;
+    margin: 4% 10%;
+    
+}
+form
+{	
+	color: #000000;
+	width: auto;
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ol
+{
+	text-align:left;
+}
+li
+{
+	margin: 0 10px;	
+    float: left;
+    
+}
+input
+{
+	margin: 0 5px;
+	padding: 0 10px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-color: #000000;
+	
+}
+hr
+{
+	border-color: orange;
+	width: 90%;
+}
+button
+{
+	width: 6em;
+	height: 2em;
+	font-size: 20px;
+	background: #FFA500;
+	color: white;
+	margin:10px;
+}

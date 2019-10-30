@@ -1,0 +1,29 @@
+div
+{
+    text-align:center;
+    margin: 10px,auto;
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+#time
+{
+    width:400px;
+    margin:auto;
+}
+button{
+    width:70px;
+    float:left;
+    height:40px;
+}
+#month
+{
+    width:60%;
+    float:left;  
+}
+ 
+.day{
+    width:14%;
+    float:left;
+    font-size: 20px;
+}
+

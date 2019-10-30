@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>图片相框展示的设计与实现</title>
+		<style>
+			#recycle
+			{
+				border: 1px dashed;
+				height: 40px;
+				width: 150px;
+				text-align: center;
+			}
+			#img
+			{
+				height: 438px;
+				width: 500px;
+				background-image: url(img/photoframe.jpg);
+				background-repeat:no-repeat ;
+				text-align: center;
+			}
+			img
+			{
+				
+				background-image: url(img/hua.png);
+				background-repeat: no-repeat;
+				margin: 180px 150px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<h2>图片相框展示的设计与实现</h2>
+		<hr />
+		<div id="recycle" ondragover="allowDrop(event)" ondrop="fileDrop(event)" >
+请将图片拖放至此处</div>
+        <p id="img"><img src="img/hua.png"/> </p>
+	</body>
+	<script>
+		
+	</script>
+</html>

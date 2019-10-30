@@ -1,0 +1,43 @@
+*{
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+h2,h4{
+	text-align: center;
+	padding-top: 10px;
+}
+
+div{
+	text-align: center;
+}
+
+textarea{
+	width: 85%;
+	height:300px ;
+}
+
+button{
+	width: 150px;
+	height: 30px;
+}
+
+p{
+	margin-top: 20px;
+}
+
+
+table{
+	text-align: center;
+	width: 85%;
+    margin: 0 7%;
+	border: 1px solid #000;
+}
+	
+table tr,table td{
+	border: 1px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+}
