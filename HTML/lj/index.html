@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>仿回收站效果的设计与实现</title>
+<style type="text/css">
+body
+{
+	position:relative;
+}
+
+div
+{
+	width:100px;
+	height:80px;
+	position:absolute;
+	line-height:80px;
+	text-align:center;
+	display:block;
+}
+
+.k
+{
+	border: 2px solid black;
+	width: 280px;
+	height: 240px;
+}
+
+.folder
+{
+	text-align: center;
+	font-size:26px ;
+	height: 80px;
+	width: 100px;
+	background:url(img/folder.png) ;
+	background-repeat: no-repeat;
+   
+}
+
+#div1
+{
+   left:10px;
+   top:20px;
+   z-index:2;
+}
+
+#div2
+{
+	left:160px;
+	top:20px;
+	z-index:2;
+}
+#div3
+{
+  left:10px;
+  top:140px;
+  z-index:2;
+}
+
+#div4
+{
+	left:160px;
+	top:140px;
+	z-index:2;
+}
+#div5
+{
+	text-align:center;
+	line-height: 200px;
+	background-image: url(img/recycle.jpg);
+	background-repeat: no-repeat;
+	margin-left:320px;
+	margin-top:20px;
+	width:200px;
+	height:200px;
+	font-size:32px;
+}
+</style>
+</head>
+<body>
+	<h3>仿回收站效果的设计与实现</h3>
+	<hr />
+<div class="k">
+<div class="folder" id="div1">文件1</div>
+<div class="folder" id="div2">文件2</div>
+<div class="folder" id="div3">文件3</div>
+<div class="folder" id="div4">文件4</div>
+</div>
+<div class="folder" id="div5">回收站</div>
+<script>
+var aDiv=document.getElementsByTagName("div");
+var orleft;
+var ortop;
+var ordis;
+for(var i=1;i<=4;i++){
+	drag(aDiv[i]);
+}
+function drag(obj){
+	obj.onmousedown=function(ev){
+		obj.style.zIndex=4;
+		ev=ev||event;
+		that=this;
+		orleft=getStyle(this,"left");
+		ortop=getStyle(this,"top");
+		console.log(orleft);
+		console.log(ortop);
+		var disX=ev.clientX-this.offsetLeft;
+		var disY=ev.clientY-this.offsetTop;
+		document.onmousemove=function(ev){
+			ev=ev||event;
+			var newleft=ev.clientX-disX;
+			var newtop=ev.clientY-disY;
+			if(newleft<0){newleft=1;}
+			if(newtop<0){newtop=1;}
+			if((newleft+obj.offsetWidth)>document.documentElement.clientWidth){newleft=document.documentElement.clientWidth-obj.offsetWidth;}
+			if((newtop+obj.offsetHeight)>document.documentElement.clientHeight){newtop=document.documentElement.clientHeight-obj.offsetHeight;}
+			
+			obj.style.left=newleft+"px";
+			obj.style.top=newtop+"px";
+			ordis=getStyle(that,"diaplay");
+		}
+	}
+	
+	document.onmouseup=function(){			
+		document.onmousemove=null;	
+		if(that.offsetLeft>aDiv[5].offsetLeft&&
+			that.offsetLeft<aDiv[5].offsetLeft+aDiv[5].offsetWidth-obj.offsetWidth&&
+			that.offsetTop>aDiv[5].offsetTop&&
+			that.offsetTop<aDiv[5].offsetTop+aDiv[5].offsetHeight-obj.offsetHeight){
+				that.style.display="none";
+		}
+			
+		if(ordis="block"){
+			that.style.left=orleft;
+			that.style.top=ortop;
+		}
+	}
+	
+}
+
+
+function getStyle( obj, attr ){
+	return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle( obj )[attr];
+}
+</script>
+</body>
+</html>
