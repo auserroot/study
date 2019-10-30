@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "登录注册", "登录注册\登录注册.vcxproj", "{55C7D343-8783-4070-8F99-A43886098C44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C7D343-8783-4070-8F99-A43886098C44}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55C7D343-8783-4070-8F99-A43886098C44}.Debug|Win32.Build.0 = Debug|Win32
+		{55C7D343-8783-4070-8F99-A43886098C44}.Release|Win32.ActiveCfg = Release|Win32
+		{55C7D343-8783-4070-8F99-A43886098C44}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
