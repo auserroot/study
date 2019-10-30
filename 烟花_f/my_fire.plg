@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: my_fire - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\f1998\AppData\Local\Temp\RSPB407.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/my_fire.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\VC文件\我的烟花完成版带注释\我的烟花完成版带注释\my_fire.cpp"
+]
+Creating command line "cl.exe @C:\Users\f1998\AppData\Local\Temp\RSPB407.tmp" 
+Creating temporary file "C:\Users\f1998\AppData\Local\Temp\RSPB408.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/my_fire.pdb" /debug /machine:I386 /out:"Debug/my_fire.exe" /pdbtype:sept 
+".\Debug\my_fire.obj"
+]
+Creating command line "link.exe @C:\Users\f1998\AppData\Local\Temp\RSPB408.tmp"
+<h3>Output Window</h3>
+Compiling...
+my_fire.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+my_fire.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
