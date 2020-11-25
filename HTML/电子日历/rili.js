@@ -27,11 +27,11 @@
         showMonth();
         count();
         var firstdate=new Date(year,month-1,1);
-        var xiqi=firstdate.getDay();
+        var xinqi=firstdate.getDay();
         var daterow=document.getElementById("day");
         daterow.innerHTML=" ";
-        if(xiqi!=0){
-            for(var i=0;i<xiqi;i++){
+        if(xinqi!=0){
+            for(var i=0;i<xinqi;i++){
                 var dayElement=document.createElement("div");
                 dayElement.className="day";
                 daterow.appendChild(dayElement);
