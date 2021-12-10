@@ -1,14 +1,20 @@
 div
 {
     text-align:center;
-    margin: 10px auto;
-/*     margin-top:10px; */
-/*     margin-bottom:10px;  */
+    /* margin: 10px auto;
+    margin-top:10px;
+    margin-bottom:10px;  */
 }
 #time
 {
     width:400px;
     margin:auto;
+}
+#btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 button{
     width:70px;
@@ -20,10 +26,22 @@ button{
     width:60%;
     float:left;  
 }
- 
+#week{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#day{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+}
 .day{
     width:14%;
-    float:left;
+    /* float:left; */
     font-size: 20px;
+    padding: 10px 0;
 }
 
