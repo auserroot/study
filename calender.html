@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>电子日历</title>
+		<link rel="stylesheet" href="calender.css" />
+		<script type="text/javascript" src="rili.js"></script>
+	</head>
+	<body onload="showDate()">
+        <h3>电子日历的实现</h3>
+        <hr/>
+            <div id="time">
+                <div>
+                  <button onclick="lastMonth()">上个月</button>
+                  <div id="month"></div>
+                  <button onclick="nextMonth()">下个月</button>
+                </div>
+ 
+                <div>
+                   <div class="day">日</div>
+                   <div class="day">一</div>
+                   <div class="day">二</div>
+                   <div class="day">三</div>
+                   <div class="day">四</div>
+                   <div class="day">五</div>
+                   <div class="day">六</div>
+                </div>
+                
+                <div id="day"></div>
+                
+            </div>
+	</body>
+</html>
